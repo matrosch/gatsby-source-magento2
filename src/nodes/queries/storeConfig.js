@@ -16,6 +16,7 @@ const storeConfig = `
     secure_base_url
     secure_base_link_url
     secure_base_media_url
+    root_category_id
   }
 }
 `;

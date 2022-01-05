@@ -25,6 +25,8 @@ const createCategoryNodes = (
         reporter.panic(`got empty storeConfig.secure_base_media_url`);
     }
 
+    const rootId = storeConfig.root_category_id;
+
     const query =
         queries && queries.categoryQuery
             ? queries.categoryQuery
@@ -57,7 +59,7 @@ const createCategoryNodes = (
                 touchNode,
                 bar,
             },
-            2,
+            rootId,
             productMap
         );
 
